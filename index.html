@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Contatti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+    <header>
+        <h1>Gestione Contatti</h1>
+    </header>
+
+    <section class="form-card">
+        <h3>Nuovo Utente</h3>
+        <div class="input-group">
+            <input type="text" id="nome" placeholder="Inserisci il nome...">
+            <input type="email" id="email" placeholder="E-mail (es. nome@mail.com)">
+            <button onclick="inviaDati()" class="btn-primary">
+                Salva
+            </button>
+        </div>
+        <p id="risposta"></p>
+    </section>
+
+    <section class="table-container">
+        <h3>Utenti Registrati</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Data Registrazione</th>
+                        <th style="text-align: center;">Azioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tabella">
+                    </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
